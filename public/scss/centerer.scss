@@ -1,0 +1,36 @@
+
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+/*.center {
+  position: relative;
+
+  div {
+    @include centerer(true, true);
+  }
+}
+*/
+
+.columns {
+  height: 250px;
+  margin: 0 auto;
+}
+.y-center
+{
+  display: block;
+  position: relative;
+  top: 50%;
+  margin-top: -50px;
+}

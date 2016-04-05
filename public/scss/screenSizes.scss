@@ -1,0 +1,32 @@
+
+/*
+  Usage:
+  div {
+      // regular styles here
+      @include respondTo(desktop) {
+          &:hover { background: blue; } // only add the hover effect on desktop browsers
+      }
+  }
+*/
+
+
+// Breakpoints for each query
+$smartphone: 480px;
+$tabletPortrait: 767px;
+$tabletLandscape: 1024px;
+$desktop: 1174px;
+$largeScreen: 1400px;
+@mixin respondTo($media) {
+  @if $media == smartphone {
+    @media (max-width: $smartphone) { @content; }
+  }
+  @else if $media == tablet {
+    @media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) { @content; }
+  }
+  @else if $media == smallScreen {
+    @media (max-width: $desktop) { @content; }
+  }
+  @else if $media == desktop {
+    @media (min-width: $desktop) { @content; }
+  }
+}

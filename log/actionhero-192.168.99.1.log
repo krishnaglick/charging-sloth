@@ -1,0 +1,113 @@
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-04-05T01:07:38.110Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-04-05T01:07:38.188Z"}
+{"level":"info","message":"actionhero member 192.168.99.1 has joined the cluster","timestamp":"2016-04-05T01:07:38.198Z"}
+{"level":"notice","message":"pid: 2156","timestamp":"2016-04-05T01:07:38.429Z"}
+{"level":"notice","message":"server ID: 192.168.99.1","timestamp":"2016-04-05T01:07:38.430Z"}
+{"level":"notice","message":"Starting server: `web` @ 0.0.0.0:8080","timestamp":"2016-04-05T01:07:38.437Z"}
+{"level":"notice","message":"Starting server: `websocket`","timestamp":"2016-04-05T01:07:38.444Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-04-05T01:07:38.951Z"}
+{"level":"notice","message":"*** Server Started ***","timestamp":"2016-04-05T01:07:38.951Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":0,"level":"info","message":"[ action @ web ]","timestamp":"2016-04-05T01:07:51.235Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":0,"level":"info","message":"[ action @ web ]","timestamp":"2016-04-05T01:07:51.239Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T01:08:01.332Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing...","timestamp":"2016-04-05T01:08:13.975Z"}
+{"level":"notice","message":"Stopping server: web","timestamp":"2016-04-05T01:08:13.977Z"}
+{"level":"notice","message":"Stopping server: websocket","timestamp":"2016-04-05T01:08:13.978Z"}
+{"level":"info","message":"actionhero member 192.168.99.1 has left the cluster","timestamp":"2016-04-05T01:08:13.982Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-04-05T01:08:13.987Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-04-05T01:08:29.544Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-04-05T01:08:29.590Z"}
+{"level":"info","message":"actionhero member 192.168.99.1 has joined the cluster","timestamp":"2016-04-05T01:08:29.599Z"}
+{"level":"notice","message":"pid: 6788","timestamp":"2016-04-05T01:08:29.736Z"}
+{"level":"notice","message":"server ID: 192.168.99.1","timestamp":"2016-04-05T01:08:29.737Z"}
+{"level":"notice","message":"Starting server: `web` @ 0.0.0.0:8080","timestamp":"2016-04-05T01:08:29.744Z"}
+{"level":"notice","message":"Starting server: `websocket`","timestamp":"2016-04-05T01:08:29.751Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-04-05T01:08:30.229Z"}
+{"level":"notice","message":"*** Server Started ***","timestamp":"2016-04-05T01:08:30.229Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T01:08:30.474Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T01:08:32.687Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T01:09:04.791Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T01:09:51.011Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T01:10:39.970Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T01:13:05.339Z"}
+{"to":"127.0.0.1","action":"potato","params":"{\"action\":\"potato\",\"a\":\"b\"}","duration":1,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-04-05T01:14:03.395Z"}
+{"to":"127.0.0.1","action":"potato","params":"{\"action\":\"potato\",\"a\":\"b\"}","duration":1,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-04-05T01:14:14.226Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing...","timestamp":"2016-04-05T01:14:28.771Z"}
+{"level":"notice","message":"Stopping server: web","timestamp":"2016-04-05T01:14:28.772Z"}
+{"level":"notice","message":"Stopping server: websocket","timestamp":"2016-04-05T01:14:28.773Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-04-05T01:14:28.777Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-04-05T01:15:03.116Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-04-05T01:15:03.163Z"}
+{"level":"info","message":"actionhero member 192.168.99.1 has joined the cluster","timestamp":"2016-04-05T01:15:03.174Z"}
+{"level":"notice","message":"pid: 4752","timestamp":"2016-04-05T01:15:03.303Z"}
+{"level":"notice","message":"server ID: 192.168.99.1","timestamp":"2016-04-05T01:15:03.304Z"}
+{"level":"notice","message":"Starting server: `web` @ 0.0.0.0:8080","timestamp":"2016-04-05T01:15:03.311Z"}
+{"level":"notice","message":"Starting server: `websocket`","timestamp":"2016-04-05T01:15:03.318Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-04-05T01:15:03.813Z"}
+{"level":"notice","message":"*** Server Started ***","timestamp":"2016-04-05T01:15:03.813Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T01:15:03.915Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T01:15:20.675Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T01:15:24.342Z"}
+{"to":"127.0.0.1","action":"joinServer","params":"{\"action\":\"joinServer\",\"apiVersion\":1}","duration":1,"level":"info","message":"[ action @ websocket ]","timestamp":"2016-04-05T01:15:38.190Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T01:48:44.544Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T01:49:04.443Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T01:54:49.182Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T01:54:49.708Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T01:55:28.020Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T01:55:28.408Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:03:44.774Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:03:45.149Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:05:45.106Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:05:45.480Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:05:55.925Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:05:56.395Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:06:49.210Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:06:49.579Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:07:37.791Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:07:38.885Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:07:51.968Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:07:52.359Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:09:15.269Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:09:15.637Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:10:30.817Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:10:31.139Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:10:53.863Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:10:54.190Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:11:57.005Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:11:57.313Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:12:50.383Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:12:50.733Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:16:24.581Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:16:24.957Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:16:55.606Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:16:55.967Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:18:05.082Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:18:05.487Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:18:19.239Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:18:21.144Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:18:53.595Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:18:53.969Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:24:45.746Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:24:46.117Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:24:56.656Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:24:57.365Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:24:58.505Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:24:58.873Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:25:53.692Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:25:54.051Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:25:56.946Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:25:57.309Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:26:01.842Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:26:02.805Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:26:15.890Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:26:16.935Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:26:40.465Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:26:41.474Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:27:18.124Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:27:18.594Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:27:48.538Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:27:49.494Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:29:52.844Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:29:53.188Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-04-05T02:30:11.912Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-04-05T02:30:12.298Z"}

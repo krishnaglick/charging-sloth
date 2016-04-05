@@ -11,14 +11,18 @@
     "ws": "latest"
   },
   "devDependencies": {
+    "css-loader": "^0.23.1",
     "mocha": "latest",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.2.0",
     "should": "latest",
-    "watchify": "^3.7.0"
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.14"
   },
   "scripts": {
     "start": "node node_modules/actionhero/bin/actionhero start",
     "actionhero": "node_modules/actionhero/bin/actionhero",
     "test": "SET NODE_ENV=test & mocha",
-    "game": "node node_modules/watchify/bin/cmd public/javascript/game.js -o public/static/bundle.js"
+    "game": "node node_modules/webpack/bin/webpack --progress --colors --watch"
   }
 }
