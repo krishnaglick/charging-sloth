@@ -36,5 +36,6 @@
 	"Server stopped: %s": "Server stopped: %s",
 	"The actionhero has been stopped": "The actionhero has been stopped",
 	"***": "***",
-	"actionhero member %s has left the cluster": "actionhero member %s has left the cluster"
+	"actionhero member %s has left the cluster": "actionhero member %s has left the cluster",
+	"action reloaded: %s @ v%s, %s": "action reloaded: %s @ v%s, %s"
 }

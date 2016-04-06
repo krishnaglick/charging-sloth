@@ -46,13 +46,19 @@
 
 	
 	__webpack_require__(1);
+	__webpack_require__(16);
 
-	let client = new ActionheroClient();
+	let Client = __webpack_require__(15);
+
+	let client = new Client();
 	window.client = client;
-	client.connect();
-	client.on('connected', () => console.log('connected!'));
 
-	//debugger;
+	client.client.on('connected', () => console.log('connected!'));
+
+	document.getElementById('joinGame').addEventListener('click', () => {
+	  client.joinServer({ name: document.getElementById('charName').value });
+	});
+
 
 /***/ },
 /* 1 */
@@ -89,7 +95,7 @@
 
 
 	// module
-	exports.push([module.id, "/*.center {\r\n  position: relative;\r\n\r\n  div {\r\n    @include centerer(true, true);\r\n  }\r\n}\r\n*/\n.columns {\n  height: 250px;\n  margin: 0 auto; }\n\n.y-center {\n  display: block;\n  position: relative;\n  top: 50%;\n  margin-top: -50px; }\n", ""]);
+	exports.push([module.id, "", ""]);
 
 	// exports
 
@@ -400,6 +406,75 @@
 		if(oldSrc)
 			URL.revokeObjectURL(oldSrc);
 	}
+
+
+/***/ },
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */
+/***/ function(module, exports) {
+
+	
+	module.exports = class Client {
+	  constructor() {
+	    this.client = new ActionheroClient();
+	    this.client.connect();
+	  }
+
+	  joinServer(player) {
+	    this.client.action('joinServer', player, function() {
+	      console.log('whatami: ', arguments);
+	    });
+	  }
+	};
+
+
+/***/ },
+/* 16 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(17);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./game.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./game.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "\r\nbody {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n", ""]);
+
+	// exports
 
 
 /***/ }
