@@ -56,7 +56,11 @@
 	client.client.on('connected', () => console.log('connected!'));
 
 	document.getElementById('joinGame').addEventListener('click', () => {
-	  client.joinServer({ name: document.getElementById('charName').value });
+	  console.log(document.getElementById('charName').value);
+	  client.joinServer({
+	    key: 'name',
+	    value: document.getElementById('charName').value
+	  });
 	});
 
 
@@ -460,8 +464,8 @@
 	  }
 
 	  joinServer(player) {
-	    this.client.action('joinServer', player, function() {
-	      console.log('whatami: ', arguments);
+	    this.client.action('joinServer', player, (response) => {
+	      console.log('whatami: ', response);
 	    });
 	  }
 	};

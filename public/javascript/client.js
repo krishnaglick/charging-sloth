@@ -6,8 +6,8 @@ module.exports = class Client {
   }
 
   joinServer(player) {
-    this.client.action('joinServer', player, function() {
-      console.log('whatami: ', arguments);
+    this.client.action('joinServer', player, (response) => {
+      console.log('whatami: ', response);
     });
   }
 };

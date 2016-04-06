@@ -15,7 +15,7 @@ exports.action = {
 
   run: function(api, data, next){
     var error = null;
-    //console.log(data);
+    console.log('data.params: ', data.params);
     data.response.potato = 'potato';
     next(error);
   }

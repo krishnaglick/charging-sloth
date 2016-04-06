@@ -2855,7 +2855,7 @@ if (
 //
 module.exports = Primus;
 
-},{"demolish":1,"emits":2,"eventemitter3":3,"querystringify":6,"recovery":7,"tick-tock":9,"url-parse":10,"yeast":12}]},{},[13])(13);
+},{"demolish":1,"emits":2,"eventemitter3":3,"querystringify":6,"recovery":7,"tick-tock":9,"url-parse":10,"yeast":12}]},{},[13])(13);
   return Primus;
 });
 
