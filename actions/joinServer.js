@@ -11,7 +11,9 @@ exports.action = {
   toDocument:             true,
   middleware:             [],
 
-  inputs: {},
+  inputs: {
+    player: { required: true }
+  },
 
   run: function(api, data, next){
     var error = null;
