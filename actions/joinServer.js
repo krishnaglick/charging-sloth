@@ -12,13 +12,20 @@ exports.action = {
   middleware:             [],
 
   inputs: {
-    player: { required: true }
+    name: { required: true },
+    otherAttribute: {}
   },
 
   run: function(api, data, next){
     var error = null;
-    console.log('data.params: ', data.params);
-    data.response.potato = 'potato';
-    next(error);
+    //maek player
+    let player = new api.classes.player(data.params);
+    let fingerprint = data.connection.fingerprint;
+    api.helpers.addPlayer(player, fingerprint)
+    .then(() => {
+      data.response.result = 'Join Successful!';
+      next();
+    })
+    .catch(next);
   }
 };
