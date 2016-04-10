@@ -2,9 +2,9 @@
 'use strict';
 
 module.exports = {
-  loadPriority:  1000,
-  startPriority: 1000,
-  stopPriority:  1000,
+  loadPriority:  1002,
+  startPriority: 1002,
+  stopPriority:  1002,
   initialize: function(api, next) {
     let globby = require('globby');
     let path = require('path');
@@ -19,9 +19,10 @@ module.exports = {
               middleware[key] = middleware[key].bind(api);
           });
           api.actions.addMiddleware(middleware);
+          api.connections.addMiddleware(middleware);
         }
         catch(x) {
-          console.log(x);
+          console.log(`${file} error: `, x);
         }
       });
       next();

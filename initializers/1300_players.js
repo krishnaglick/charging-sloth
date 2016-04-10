@@ -6,13 +6,22 @@ module.exports = {
   stopPriority:  1300,
   initialize: function(api, next) {
     api.players = {};
+    //debugger;
+    //api.servers.servers.websocket
 
     next();
   },
-  start: function(api, next){
+  start: function(api, next) {
+    let wsServer = api.servers.servers.websocket.server;
+    wsServer.on('disconnection', function(rawConnection){
+      api.players[rawConnection.id].disconnect();
+    });
+    wsServer.on('connection', function(rawConnection){
+      //I may be needed.
+    });
     next();
   },
-  stop: function(api, next){
+  stop: function(api, next) {
     next();
   }
 };

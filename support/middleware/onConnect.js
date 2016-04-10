@@ -10,6 +10,7 @@ module.exports = {
     let err = null;
     console.log('connection! ', data.connection.type);
     if(data.connection.type === 'websocket') {
+      console.log('data: ', data);
       next();
     }
     else {

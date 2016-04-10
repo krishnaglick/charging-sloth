@@ -2,9 +2,9 @@
 'use strict';
 
 module.exports = {
-  loadPriority:  1000,
-  startPriority: 1000,
-  stopPriority:  1000,
+  loadPriority:  1002,
+  startPriority: 1002,
+  stopPriority:  1002,
   initialize: function(api, next) {
     api.helpers = {};
     let globby = require('globby');
@@ -20,7 +20,7 @@ module.exports = {
           });
         }
         catch(x) {
-          console.log(x);
+          console.log(`${file} error: `, x);
         }
       });
       next();

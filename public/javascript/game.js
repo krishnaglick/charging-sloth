@@ -14,10 +14,13 @@ document.getElementById('joinGame').addEventListener('click', () => {
     name: document.getElementById('charName').value
   };
   client.joinServer(player)
-  .then(() => {
-    //Start gaem
+  .then(({result}) => {
+    if(result == 'success') {
+      //Start gaem
+    }
   })
   .catch((err) => {
+    debugger;
     //handle err
   });
 });

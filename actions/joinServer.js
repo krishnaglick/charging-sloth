@@ -17,13 +17,14 @@ exports.action = {
   },
 
   run: function(api, data, next){
-    var error = null;
-    //maek player
+    let error = null;
+    //if(data.player) //Player already exists...
     let player = new api.classes.player(data.params);
     let fingerprint = data.connection.fingerprint;
+    console.log(data.player);
     api.helpers.addPlayer(player, fingerprint)
     .then(() => {
-      data.response.result = 'Join Successful!';
+      data.response.result = 'success';
       next();
     })
     .catch(next);
