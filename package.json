@@ -9,6 +9,7 @@
   "dependencies": {
     "actionhero": "^13.3.0",
     "bluebird": "^3.3.4",
+    "phaser": "^2.4.6",
     "ws": "latest"
   },
   "devDependencies": {
