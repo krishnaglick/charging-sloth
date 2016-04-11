@@ -2,10 +2,11 @@
 'use strict';
 
 module.exports = {
-  name: 'websockets addPlayerToDataObjectBasedOnId',
+  name: 'addPlayerToDataObjectBasedOnId',
   global: true,
   priority: 1000,
   preProcessor: function(data, next) {
+    console.log('has a connection');
     let id = data.connection.rawConnection.id;
     data.player = this.players[id];
     next();

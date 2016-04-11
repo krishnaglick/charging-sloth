@@ -5,16 +5,13 @@ module.exports = {
   name: 'websockets onConnect',
   global: true,
   priority: 1000,
-  preProcessor: function(data, next) {
+  create: function(data) {
     return next(); //This intercepts everything. Not sure I want/need it atm.
     let err = null;
     console.log('connection! ', data.connection.type);
     if(data.connection.type === 'websocket') {
       console.log('data: ', data);
-      next();
     }
-    else {
-      next(err);
-    }
-  }
+  },
+  destroy: (data) => {}
 };
