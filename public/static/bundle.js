@@ -49,6 +49,13 @@
 	__webpack_require__(5);
 
 	let Client = __webpack_require__(7);
+	let Game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
+	  preload: __webpack_require__(14).bind(Game),
+	  create: create,
+	  update: update,
+	  render: render
+	});
+	debugger;
 
 	let client = new Client();
 	window.client = client;
@@ -6081,6 +6088,19 @@
 	  delete immediateIds[id];
 	};
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10).setImmediate, __webpack_require__(10).clearImmediate))
+
+/***/ },
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */
+/***/ function(module, exports) {
+
+	
+	module.exports = function() {
+	  this.load.image();
+	};
+
 
 /***/ }
 /******/ ]);

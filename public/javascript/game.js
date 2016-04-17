@@ -3,6 +3,13 @@ require("../scss/centerer.scss");
 require("../css/game.css");
 
 let Client = require('./client');
+let Game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
+  preload: require('./preload').bind(Game),
+  create: create,
+  update: update,
+  render: render
+});
+debugger;
 
 let client = new Client();
 window.client = client;
