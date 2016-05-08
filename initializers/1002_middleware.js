@@ -6,6 +6,7 @@ module.exports = {
   startPriority: 1002,
   stopPriority:  1002,
   initialize: function(api, next) {
+    return next();
     let globby = require('globby');
     let path = require('path');
 

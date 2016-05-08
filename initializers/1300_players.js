@@ -12,14 +12,14 @@ module.exports = {
     next();
   },
   start: function(api, next) {
-    let wsServer = api.servers.servers.websocket.server;
+    /*let wsServer = api.servers.servers.websocket.server;
     wsServer.on('disconnection', function(rawConnection){
       api.players[rawConnection.id] &&
         api.players[rawConnection.id].disconnect();
     });
     wsServer.on('connection', function(rawConnection){
       console.log('deep hook working', rawConnection.id);
-    });
+    });*/
     next();
   },
   stop: function(api, next) {

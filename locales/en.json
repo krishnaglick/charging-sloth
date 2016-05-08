@@ -56,5 +56,6 @@
 	"worker: ended": "worker: ended",
 	"task workers stopped": "task workers stopped",
 	"*** rebooting due to config change (%s) ***": "*** rebooting due to config change (%s) ***",
-	"*** Rebooting due to server (%s) change ***": "*** Rebooting due to server (%s) change ***"
+	"*** Rebooting due to server (%s) change ***": "*** Rebooting due to server (%s) change ***",
+	"you have too many pending requests": "you have too many pending requests"
 }

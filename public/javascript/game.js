@@ -3,13 +3,20 @@ require("../scss/centerer.scss");
 require("../css/game.css");
 
 let Client = require('./client');
-let Game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
-  preload: require('./preload').bind(Game),
-  create: create,
-  update: update,
-  render: render
-});
-debugger;
+let game = new Phaser.Game(800, 600, Phaser.AUTO, 'Gaem');
+let startupOptions = {
+  preload: () => {
+    require('./preload.js').sprites(game);
+    require('./preload.js').terrain(game);
+    require('./preload.js').buttons(game);
+  },
+  create: () => {
+    game.physics.startSystem(Phaser.Physics.P2);
+    game.state.start('mainMenu');
+  },
+  update: () => {},
+  render: () => {}
+};
 
 let client = new Client();
 window.client = client;
@@ -22,8 +29,11 @@ document.getElementById('joinGame').addEventListener('click', () => {
   };
   client.joinServer(player)
   .then(({result}) => {
+    console.log(result);
     if(result == 'success') {
       //Start gaem
+      game.state.add('mainMenu', require('./menus/mainMenu.js'));
+      game.state.add('load', startupOptions, true);
     }
   })
   .catch((err) => {

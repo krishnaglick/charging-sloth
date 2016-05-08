@@ -24,9 +24,9 @@
     "globby": "^4.0.0"
   },
   "scripts": {
-    "start": "node --harmony-destructuring node_modules/actionhero/bin/actionhero start",
-    "cluster": "node --harmony-destructuring node_modules/actionhero/bin/actionhero startCluster",
-    "debug": "start node-inspector --web-port=8082 & node --debug --harmony-destructuring node_modules/actionhero/bin/actionhero start",
+    "start": "node node_modules/actionhero/bin/actionhero start",
+    "cluster": "node node_modules/actionhero/bin/actionhero startCluster",
+    "debug": "start node-inspector --web-port=8082 & node --debug node_modules/actionhero/bin/actionhero start",
     "actionhero": "node_modules/actionhero/bin/actionhero",
     "test": "SET NODE_ENV=test & mocha",
     "game": "node node_modules/webpack/bin/webpack --progress --colors --watch"
